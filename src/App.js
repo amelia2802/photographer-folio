@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="px-10 m-0">
+    <div>
       <Header />
       <Hero />
     </div>
