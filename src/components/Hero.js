@@ -32,7 +32,7 @@ export default function Hero(){
                 </button>
             </div>
             <button className='w-8 h-14 absolute top-[38em] left-[50%] text-center bg-[rgba(0, 0, 0, 0.256)] border-2 rounded-[6em] m-0'>
-               <p className='animate-bounce animate-infinite text-[#fff]'>●</p>
+               <p className='relative top-[-.5em] animate-bounce animate-infinite text-[#fff]'>|</p>
                </button>
         </main>
     )
