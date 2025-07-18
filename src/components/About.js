@@ -1,4 +1,19 @@
+import pradaLogo from "../assets/prada.svg";
+import lv from "../assets/LV.png";
+import vogue from "../assets/Vogue.svg";
+import ck from "../assets/calvin-klein.svg";
+import vs from "../assets/vs.png";
+
 export default function About(){
+    
+    const brands=[
+        {name:"prada",url:pradaLogo},
+        {name:"louie vuitton",url:lv},
+        {name:"vogue",url:vogue},
+        {name:"calvin klein",url:ck},
+        {name:"victoria's secret",url:vs},
+    ]
+
     return(
         <section>
             <h2 className="p-20 text-center text-[#D40003] bolder text-[3em]">About Barbara</h2>
@@ -16,6 +31,14 @@ export default function About(){
                     </p>
                 </article>
                 <img className="w-2/5 rounded-xl shadow-2xl" src={require("../assets/f4.jpg")} alt="Barbara Williams with camera" />
+            </div>
+            <div className="py-12 mx-[15em] flex shadow-2xl border flex-col items-center gap-10">
+                <h3 className="text-2xl">Trusted by Global Luxury Brands</h3>
+                <div className="flex justify-evenly gap-20">
+                    {brands.map((brand)=>
+                        <img src={brand.url} alt={brand.name} />
+                    )}
+                </div>
             </div>
         </section>
     )
