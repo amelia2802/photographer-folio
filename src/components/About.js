@@ -32,7 +32,7 @@ export default function About(){
                 </article>
                 <img className="w-2/5 rounded-xl shadow-2xl" src={require("../assets/f4.jpg")} alt="Barbara Williams with camera" />
             </div>
-            <div className="py-12 mx-[15em] flex shadow-2xl border flex-col items-center gap-10">
+            <div className="mt-5 py-12 mx-[15em] flex shadow-2xl rounded-lg flex-col items-center gap-10">
                 <h3 className="text-2xl">Trusted by Global Luxury Brands</h3>
                 <div className="flex justify-evenly gap-20">
                     {brands.map((brand)=>

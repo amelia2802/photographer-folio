@@ -28,9 +28,9 @@
     }
 
     .nav-link{
-        color: #F9ECE3;
+        color: #d22c2f;
         font-style: italic;
-        border-bottom: 3px solid #F9ECE3;
+        border-bottom: 3px solid #d22c2f;
         cursor: pointer;
         transition: .25s linear;
     }
