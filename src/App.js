@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className='bg-[#FFFAFA]'>
+    <div className='bg-[#FFFAFA] z-0'>
       <Header />
       <Hero />
       <About />

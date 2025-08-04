@@ -5,7 +5,7 @@ export default function Hero(){
 
     return(
         <main 
-            className="z-0 h-[45em] flex flex-col items-center bg-center bg-neutral-400 bg-cover bg-no-repeat bg-blend-multiply"
+            className="h-[45em] flex flex-col items-center bg-center bg-neutral-400 bg-cover bg-no-repeat bg-blend-multiply"
             style={{ backgroundImage: `url(${bg1})` }}
         >
             <img className='w-[45em] h-full relative top-[-6em]' src={require("../assets/logo.png")} alt="logo" />

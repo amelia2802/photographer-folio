@@ -20,7 +20,6 @@
 
     .active::after{
         content: " ●";
-
     }
 
     .active:hover{
@@ -33,5 +32,9 @@
         border-bottom: 3px solid #d22c2f;
         cursor: pointer;
         transition: .25s linear;
+    }
+
+    .popout{
+        width:100%
     }
 }

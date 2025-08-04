@@ -10,24 +10,29 @@ export const data = [
         "url": ".../assets/f1.jpg"
     },
     {
-        "brand": "Met Gala Highlights",
-        "year": "Met Gala 2022",
+        "brand": "Saint Laurent Night",
+        "year": "Met Gala 2023",
         "url": ".../assets/f3.jpg"
     },
     {
-        "brand": "Victoria's Secret Angels",
-        "year": "Victoria's Secret Fashion Show 2021",
+        "brand": "Met Gala Highlights",
+        "year": "Met Gala 2022",
         "url": ".../assets/f5.jpg"
     },
     {
-        "brand": "Red Carpet Glamour",
-        "year": "Oscars 2023",
+        "brand": "Fendi Runway",
+        "year": "Milan Fashion Week 2023",
         "url": ".../assets/f6.jpg"
     },
     {
         "brand": "Chanel Haute Couture",
         "year": "Paris Fashion Week 2024",
         "url": ".../assets/f7.jpg"
+    },
+     {
+        "brand": "Dior Elegance",
+        "year": "Cannes Film Festival 2023",
+        "url": ".../assets/f0.jpg"
     },
     {
         "brand": "Dior Elegance",
@@ -50,8 +55,8 @@ export const data = [
         "url": ".../assets/f11.jpg"
     },
     {
-        "brand": "Fendi Runway",
-        "year": "Milan Fashion Week 2023",
+        "brand": "Red Carpet Glamour",
+        "year": "Oscars 2023",
         "url": ".../assets/f12.jpg"
     },
     {
@@ -65,8 +70,8 @@ export const data = [
         "url": ".../assets/f14.jpg"
     },
     {
-        "brand": "Saint Laurent Night",
-        "year": "Met Gala 2023",
+        "brand": "Victoria's Secret Angels",
+        "year": "Victoria's Secret Fashion Show 2021",
         "url": ".../assets/f15.jpg"
     },
     {
