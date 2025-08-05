@@ -34,7 +34,12 @@
         transition: .25s linear;
     }
 
-    .popout{
-        width:100%
+    .popout {
+        transition: transform 0.3s cubic-bezier(2,2,6,1);
+    }
+    .popout:hover {
+        padding:0 1em;
+        transform: scale(.98) translateY(-8px);
+        box-shadow: 0 3em 3em rgba(0, 0, 0, 0.797);
     }
 }
