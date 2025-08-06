@@ -18,7 +18,7 @@ export default function Portfolio(){
     return(
         <section className="flex flex-col items-center gap-10 mt-20 px-5">
             <h3 className="text-5xl text-[#D40003]">Selected Works</h3>
-            <p className="italic text-[#ec8268]">A curated collection of luxury fashion photography and editorial work</p>
+            <p className="italic text-[#ec8268]">A curated selection of fashion events, campaigns and exclusive moments captured with the world's most prestigious brands</p>
             <div className="flex gap-4 mb-6">
                 {categories.map(cat => (
                     <span key={cat.id} className="px-4 py-1 bg-[#fffafaf7] rounded-xl shadow text-[#d22c2f] border border-[#d22c2f]">
