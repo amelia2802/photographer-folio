@@ -15,7 +15,7 @@ export default function About(){
     ]
 
     return(
-        <section>
+        <section id="about">
             <h2 className="p-20 text-center text-[#D40003] text-[3em]">About Barbara</h2>
             <div className="flex gap-10 justify-evenly p-9">
                 <article className="text-[1.2em] text-[#F36B6D]">

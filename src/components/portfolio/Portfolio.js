@@ -16,7 +16,7 @@ export default function Portfolio(){
     ];
 
     return(
-        <section className="flex flex-col items-center gap-10 mt-20 px-5">
+        <section id="portfolio" className="flex flex-col items-center gap-10 mt-20 px-5">
             <h3 className="text-5xl text-[#D40003]">Selected Works</h3>
             <p className="italic text-[#ec8268]">A curated selection of fashion events, campaigns and exclusive moments captured with the world's most prestigious brands</p>
             <div className="flex gap-4 mb-6">

@@ -20,10 +20,10 @@ export default function Header(){
             <div className="w-[15rem] h-[9em] bg-[15rem] bg-cover " style={{ backgroundImage: `url(${logo})` }}></div>
             <nav>
                 <ul className={`flex gap-5 ${isTop ? "text-neutral-50" : ""}`}>
-                    <li className="hover:nav-link">About</li>
-                    <li className='hover:nav-link'>Portfolio</li>
-                    <li className='hover:nav-link'>Store</li>
-                    <li className='hover:nav-link'>Contact</li>
+                    <li className="hover:nav-link"><a href="#about">About</a></li>
+                    <li className='hover:nav-link'><a href="#portfolio">Portfolio</a></li>
+                    <li className='hover:nav-link'><a href="#store">Store</a></li>
+                    <li className='hover:nav-link'><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
