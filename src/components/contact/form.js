@@ -22,7 +22,7 @@ export default function Form(){
 
     return(
         <div className="flex flex-col gap-5 p-10 w-1/2 shadow-2xl rounded-lg">
-            <h5 className="flex items-center gap-3 text-2xl text-[#D40003]"><PiCameraThin />Work with Barbara </h5>
+            <h5 className="flex items-center gap-3 text-2xl text-[#D40003]"><PiCameraThin />Work With Barbara </h5>
             <form className={`flex flex-col gap-5 ${sentEmail? "hidden" : "block"}`} >
                 <div className="flex flex-col gap-2">
                     <label for="name">Full Name</label>
