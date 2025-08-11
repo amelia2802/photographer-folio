@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png';
-import { PiButterflyThin, PiEnvelopeThin, PiPhoneCallThin, PiMapPinAreaThin, PiInstagramLogoThin } from "react-icons/pi";
+import {PiEnvelopeThin, PiPhoneCallThin, PiMapPinAreaThin, PiInstagramLogoThin } from "react-icons/pi";
 import contactInfo from "./ContactInfo";
 
 export default function Footer(){

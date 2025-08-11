@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import { PiCameraThin } from "react-icons/pi";
 import { MdOutlineDone } from "react-icons/md";
 export default function Form(){
