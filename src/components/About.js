@@ -7,17 +7,17 @@ import vs from "../assets/vs.png";
 export default function About(){
     
     const brands=[
-        {name:"prada",url:pradaLogo},
-        {name:"louie vuitton",url:lv},
-        {name:"vogue",url:vogue},
-        {name:"calvin klein",url:ck},
-        {name:"victoria's secret",url:vs},
+        {id:0,name:"prada",url:pradaLogo},
+        {id:1,name:"louie vuitton",url:lv},
+        {id:2,name:"vogue",url:vogue},
+        {id:3,name:"calvin klein",url:ck},
+        {id:4,name:"victoria's secret",url:vs},
     ]
 
     return(
-        <section id="about">
-            <h2 className="p-20 text-center text-[#D40003] text-[3em]">About Barbara</h2>
-            <div className="flex gap-10 justify-evenly p-9">
+        <section id="about" className="flex flex-col items-center p-20">
+            <h2 className="text-center text-[#D40003] text-5xl">About Barbara</h2>
+            <div className="md:flex items-center gap-10 justify-evenly py-9">
                 <article className="text-[1.2em] text-[#F36B6D]">
                     <p>
                         With over three years of experience in the fashion industry, Barbara Williams has established herself as one of the most sought-after event
@@ -30,13 +30,13 @@ export default function About(){
                         showcases her versatility in capturing both the commercial essence and artistic soul of fashion.
                     </p>
                 </article>
-                <img className="w-2/5 rounded-xl shadow-2xl" src={require("../assets/f4.jpg")} alt="Barbara Williams with camera" />
+                <img className="w-2/5 max-[600px]:w-full max-[600px]:mt-10 rounded-xl shadow-2xl" src={require("../assets/f4.jpg")} alt="Barbara Williams with camera" />
             </div>
-            <div className="mt-5 py-12 mx-[15em] flex shadow-2xl rounded-lg flex-col items-center gap-10">
-                <h3 className="text-2xl">Trusted by Global Luxury Brands</h3>
-                <div className="flex justify-evenly gap-20">
+            <div className="w-[20em] md:w-full mt-5 p-5 flex shadow-2xl rounded-lg flex-col items-center gap-10">
+                <h3 className="md:text-2xl ">Trusted by Global Luxury Brands</h3>
+                <div className="flex justify-evenly gap-8 md:gap-20">
                     {brands.map((brand)=>
-                        <img src={brand.url} alt={brand.name} />
+                        <img className="max-[600px]:w-[2em]" key={brand.id} src={brand.url} alt={brand.name} />
                     )}
                 </div>
             </div>

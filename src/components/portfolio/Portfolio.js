@@ -1,5 +1,8 @@
+import { useState } from "react";
 import {data} from "./data.js";
 export default function Portfolio(){
+
+    const [selectedCategory, setSelectedCategory] = useState("all");
 
     const typeCounts = data.reduce((acc, item) => {
         acc[item.type] = (acc[item.type] || 0) + 1;
@@ -15,29 +18,39 @@ export default function Portfolio(){
         }))
     ];
 
+    function showTopics(categoriId){
+       setSelectedCategory(categoriId);
+    }
+
+    const selectedWorks = selectedCategory === "all" ? data : (data.filter(item => item.type === selectedCategory));
+
     return(
         <section id="portfolio" className="flex flex-col items-center gap-10 mt-20 px-5">
             <h3 className="text-5xl text-[#D40003]">Selected Works</h3>
             <p className="italic text-[#ec8268]">A curated selection of fashion events, campaigns and exclusive moments captured with the world's most prestigious brands</p>
-            <div className="flex gap-4 mb-6">
+            <div className="flex gap-4 max-[600px]:block max-[600px]:translate-x-[15%]">
                 {categories.map(cat => (
-                    <span key={cat.id} className="px-4 py-1 bg-[#fffafaf7] rounded-xl shadow text-[#d22c2f] border border-[#d22c2f]">
+                    <button 
+                        key={cat.id} 
+                        className="px-4 py-1 bg-[#fffafaf7] rounded-xl max-[600px]:m-2 shadow text-[#d22c2f] border border-[#d22c2f] hover:submit" 
+                        onClick={()=> showTopics(cat.id)}
+                    >
                         {cat.label} ({cat.count})
-                    </span>
+                    </button>
                 ))}
             </div>
-            <section className="grid grid-cols-3 gap-12">
-                 {data.map((item, idx) => {
+            <section className="md:grid grid-cols-3 grid-flow-row gap-9 md:p-28 template-area">
+                 {selectedWorks.map((item, idx) => {
                     const colSpan = idx%4 === 0 ? "col-span-2" : "";
-                    const height = idx%4 === 0 ? "max-h-[50em] " : "max-h-fit";
+                    const height = idx%4 === 0 ? "max-h-[40em] " : "max-h-fit";
                     return (
-                        <div key={idx} className={`${colSpan} ${height} rounded-lg shadow-xl`}>
+                        <div key={idx} className={`${colSpan} ${height} rounded-lg md:shadow-xl max-[600px]:w-[15em]`}>
                             <img
                                 src={require(`../../${item.url.replace('.../', '')}`)}
                                 alt={item.brand}
                                 className="h-full w-full rounded-lg"
                             />
-                            <div className="w-3/4 relative top-[-8em] px-5 text-left popout">
+                            <div className="relative -top-36 px-5 text-left popout">
                                 <h4 className="font-semibold text-[#F9ECE3] text-2xl">{item.brand}</h4>
                                 <p className="text-[#ffc7a4] float-left border-b-2 border-b-[#d22c2f]">{item.year}</p>
                             </div>

@@ -21,11 +21,11 @@ export default function Form(){
     }
 
     return(
-        <div className="flex flex-col gap-5 p-10 w-1/2 shadow-2xl rounded-lg">
+        <div className="flex flex-col gap-5 p-10 md:w-1/2 max-[600px]:mt-10 shadow-2xl rounded-lg">
             <h5 className="flex items-center gap-3 text-2xl text-[#D40003]"><PiCameraThin />Work With Barbara </h5>
             <form className={`flex flex-col gap-5 ${sentEmail? "hidden" : "block"}`} >
                 <div className="flex flex-col gap-2">
-                    <label for="name">Full Name</label>
+                    <label htmlFor="name">Full Name</label>
                     <input 
                         className="px-1 py-2 border rounded-lg"
                         id="name" 
@@ -36,7 +36,7 @@ export default function Form(){
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input 
                         className="px-1 py-2 border rounded-lg" 
                         id="email"
@@ -47,7 +47,7 @@ export default function Form(){
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label for="type">Project Type </label>
+                    <label htmlFor="type">Project Type </label>
                     <input 
                         className="px-1 py-2 border rounded-lg" 
                         id="type"
@@ -57,7 +57,7 @@ export default function Form(){
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label for="details">Project Details</label>
+                    <label htmlFor="details">Project Details</label>
                     <textarea 
                         className="px-1 py-2 border rounded-lg" 
                         id="details"
@@ -67,7 +67,7 @@ export default function Form(){
                         onChange={e => setDetails(e.target.value)}
                     />
                 </div>
-                <button className="bg-[#FF4649] text-[#F9ECE3] p-2 w-max m-auto rounded-lg" onClick={submit}> Send Inquiry </button>
+                <button className="bg-[#FF4649] text-[#F9ECE3] p-2 w-max m-auto rounded-lg hover:submit" onClick={submit}> Send Inquiry </button>
             </form>
             <div className={`flex-col gap-4 items-center ${sentEmail ? "flex" : "hidden"}`}>
                 <p className="text-2xl text-[#D40003] flex items-center gap-2"><span className="bg-[#f03f4295] p-2 rounded-full"><MdOutlineDone /></span> Email Sent Sucessfully!</p>
