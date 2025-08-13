@@ -1,14 +1,13 @@
-
-
-Here is a sample README file for your project:
-
 **Portfolio Project**
 ======================
+<img width="1891" height="895" alt="Untitled design (14)" src="https://github.com/user-attachments/assets/b173ed5a-4037-4a2b-a48c-5f5936dda960" />
 
 **Overview**
 ------------
 
 This is a portfolio project that showcases a curated selection of fashion events, campaigns, and exclusive moments captured with the world's most prestigious brands.
+
+Site: https://barbara-williams-photography.netlify.app/
 
 **Features**
 ------------
@@ -37,6 +36,4 @@ This is a portfolio project that showcases a curated selection of fashion events
 
 **Acknowledgments**
 -----------------
-
-* [Your Name]: creator of the portfolio project
-* [Other contributors]: please add your name here if you've contributed to the project
+The images are non-licensable AI-generated from Freepik
