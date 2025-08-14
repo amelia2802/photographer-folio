@@ -18,7 +18,7 @@ export default function About(){
         <section id="about" className="flex flex-col items-center p-20">
             <h2 className="text-center text-[#D40003] text-5xl">About Barbara</h2>
             <div className="md:flex items-center gap-10 justify-evenly py-9">
-                <article className="text-[1.2em] text-[#F36B6D]">
+                <article className="text-[1.2em] text-[#d22c2f]">
                     <p>
                         With over three years of experience in the fashion industry, Barbara Williams has established herself as one of the most sought-after event
                         photographers in the luxury fashion space Her unique ability to capture the raw emotion and elegance of high-fashion events has made her 
@@ -33,7 +33,7 @@ export default function About(){
                 <img className="w-2/5 max-[600px]:w-full max-[600px]:mt-10 rounded-xl shadow-2xl" src={require("../assets/f4.jpg")} alt="Barbara Williams with camera" />
             </div>
             <div className="w-[20em] md:w-full mt-5 p-5 flex shadow-2xl rounded-lg flex-col items-center gap-10">
-                <h3 className="md:text-2xl ">Trusted by Global Luxury Brands</h3>
+                <p className="md:text-2xl ">Trusted by Global Luxury Brands</p>
                 <div className="flex justify-evenly gap-8 md:gap-20">
                     {brands.map((brand)=>
                         <img className="max-[600px]:w-[2em]" key={brand.id} src={brand.url} alt={brand.name} />

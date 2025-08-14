@@ -8,16 +8,19 @@ export default function Hero(){
             className="h-[45em] flex flex-col items-center bg-center bg-neutral-400 bg-cover bg-no-repeat bg-blend-multiply"
             style={{ backgroundImage: `url(${bg1})` }}
         >
-            <img className='w-[45em] h-full -top-[2em] relative md:top-[-6em]' src={require("../assets/logo.png")} alt="logo" />
-            <div className='relative -top-[16em] md:top-[-25em] text-center md:w-[50%]'>
-                <h1 className='mb-10 text-[#F9ECE3] font-bold text-xl md:text-[2em]'>Fashion Event Photographer</h1>
+            <div className='flex justify-center mt-48'>
+                <h1 className="font-custom relative text-3xl -right-5 md:-right-14 text-[#F9ECE3] font-bold md:text-6xl">BARBARA WILLIAMS</h1>
+                <img className='w-[2.5em] md:w-[6em] -left-3 h-auto object-cover -top-[2em] relative md:top-[-5.5em]' src={require("../assets/icon.png")} alt="logo" />
+            </div>
+            <div className='text-center max-[600px]:mt-6 md:w-[50%]'>
+                <p className='mb-10 text-[#F9ECE3] font-bold text-xl md:text-[2em]'>Fashion Event Photographer</p>
                 <p className='text-[#F4C5BF] md:text-[1.3em] px-4 md:px-0'>
                     Capturing the essence of high fashion through the lens of 
                     elegance. 3+ years of experience with Vogue, Louis Vuitton,
                     Victoria's Secret, and Calvin Klein.
                 </p>
             </div>
-            <div className='flex gap-10 relative -top-56 md:top-[-20em] text-sm md:text-lg'>
+            <div className='flex gap-10 mt-6 md:mt-24 text-sm md:text-lg'>
                 <a href="#portfolio">
                     <button
                         className={`btn${activeBtn === 'explore' ? ' active' : ''}`}

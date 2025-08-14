@@ -3,7 +3,7 @@ import { PiButterflyThin, PiEnvelopeThin, PiPhoneCallThin, PiMapPinAreaThin, PiI
 export default function Socials(){
     return(
         <div className="flex flex-col gap-10 md:w-1/2">
-            <h5 className="flex items-center gap-3 text-2xl text-[#D40003]">
+            <h5 className="flex items-center gap-3 font-semibold text-2xl text-[#D40003]">
                 <PiButterflyThin />
                 Luxury Photography Services
             </h5>

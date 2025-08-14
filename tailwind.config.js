@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+            custom: ['brownsugar', 'sans-serif'],
+      },
+    },
   },
   plugins: [
     require('tailwindcss-animated')
