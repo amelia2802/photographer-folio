@@ -71,15 +71,6 @@ h1,h2,h3,h4,h5,h6{
         box-shadow: 0 3em 3em rgba(0, 0, 0, 0.797);
     }
 
-    .templare-area{
-        grid-template-areas:
-        "hero hero hero hero aside2 aside2"
-        "hero hero hero hero aside2 aside2"
-        "hero hero hero hero aside2 aside2"
-        "hero hero hero hero aside2 aside2"
-        "aside3 aside3 aside4 aside4 aside5 aside5 ";
-    }
-
     .submit{
         background-color: black;
         color: #F9ECE3;
