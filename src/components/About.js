@@ -30,7 +30,7 @@ export default function About(){
                         showcases her versatility in capturing both the commercial essence and artistic soul of fashion.
                     </p>
                 </article>
-                <img className="w-2/5 max-[600px]:w-full max-[600px]:mt-10 rounded-xl shadow-2xl" src={require("../assets/f4.jpg")} alt="Barbara Williams with camera" />
+                <img className="w-2/5 max-[600px]:w-full max-[600px]:mt-10 rounded-xl shadow-2xl" src={require("../assets/f4.webp")} alt="Barbara Williams with camera" />
             </div>
             <div className="w-[20em] md:w-full mt-5 p-5 flex shadow-2xl rounded-lg flex-col items-center gap-10">
                 <p className="md:text-2xl ">Trusted by Global Luxury Brands</p>

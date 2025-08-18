@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import bg1 from '../assets/f3.jpg';
+import bg1 from '../assets/f3.webp';
 export default function Hero(){
     const [activeBtn, setActiveBtn] = useState('explore');    
 
